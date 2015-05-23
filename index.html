@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The weatherCompare App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The weatherCompare App">
+  <meta name="author" content="Jakob Ludewig">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/polycharts/js/polychart2.standalone.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The weatherCompare App</h1>
+    <h2>Comparing daily temperature data for 5000 Cities around the World</h2>
+    <p>Jakob Ludewig<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h3>Have You Ever Asked Yourself...</h3>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li class='..'>whether the summer is colder in your town than in for example New York?</li>
+<li class='..'>how much colder the winter in Moscow is than in Los Angeles?</li>
+<li class='..'>how warm it was on your birthday 3 years ago?</li>
+<li class='..'>what was the hottest day in your city last year?</li>
+</ul>
+
+<p>The Shiny App weatherCompare answers these questions...</p>
+
+<ul>
+<li class='..'>for 5000 cities world-wide</li>
+<li class='..'>with tempearture data dating back as far as 2001</li>
+<li class='..'>using the wunderground.com database</li>
+<li class='..'>presenting the data in a visually appealing way</li>
+<li class='..'>helping you pick the right weather station</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="slide-2">
+  <hgroup>
+    <h3>The App Is Made Up of a Side Bar Panel Used For Controlling the Input</h3>
+  </hgroup>
+  <article>
+      
+    <div class='left' style='float:left;width:37.7%'>
+     <ul>
+<li>Select the cities to compare from the dropdown menus
+
+<ul>
+<li>Mainly airport weather stations are in the wunderground.com database</li>
+</ul></li>
+<li>A slider lets you select the year of interest
+
+<ul>
+<li>Go back as far as 2001. If data is missing the plot will interpolate or in case of no data be empty</li>
+</ul></li>
+<li>Press the &quot;Submit&quot; button to do the comparison</li>
+</ul>
+
+    </div>    
+    <div class='right' style='float:right;width:61.3%'>
+     <p><br>
+<br><br>
+<img src='controlscreenshot.png' width=600 /></p>
+
+    </div>
+  </article>
+</slide>
+
+<slide class="" id="slide-3">
+  <hgroup>
+    <h3>The Result Will Be A Graph Plotting The Temperature Data for the Two Cities</h3>
+  </hgroup>
+  <article>
+      
+    <div class='left' style='float:left;width:37.7%'>
+     <ul>
+<li>An interactive graph is created using the R &#39;rCharts&#39; package, just like the graph to the right</li>
+</ul>
+
+    </div>    
+    <div class='right' style='float:right;width:61.3%'>
+     <iframe src ='interactivechart.html', width = "620px", height = "450px"></iframe>
+
+<p>--- &amp;twocols</p>
+
+<h3>A Map Will Help You Validate Your Choice Of Weather Stations</h3>
+
+    </div>
+  </article>
+</slide>
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h3>Go Ahead And Try It On Shinyapps.io!</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>
+Just click on the screenshot!
+</p>
+
+<p><a href="https://jludewig.shinyapps.io/weatherCompare/">
+<img src='shinyappsscreenshot.png' width="800" align="center"/>
+</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Have You Ever Asked Yourself...'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The App Is Made Up of a Side Bar Panel Used For Controlling the Input'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Result Will Be A Graph Plotting The Temperature Data for the Two Cities'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Go Ahead And Try It On Shinyapps.io!'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
